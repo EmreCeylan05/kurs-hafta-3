@@ -80,3 +80,21 @@ body{
     padding-right: 50px;
     padding-left: 50px;
 }
+.footer > div >a{
+    color: transparent;
+}
+.footer > div >a:hover{
+    cursor: pointer;
+}
+.footer > div > a > img{
+    background-color: white;
+    height: 28px;
+    margin-left: 5px;
+}
+.footer > div > a > img:hover{
+    transform: translateY(-10px);
+    background-color: #8FD6E1;
+}
+.footer > div> span{
+    margin-left: 530px;
+}
