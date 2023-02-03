@@ -12,6 +12,8 @@ body{
 .logo{
     height: 120px;
     margin-top: 4px;
+    animation-name: logo_animation;
+    animation-duration: 1.5s;
 }
 .header{
     padding-left: 30px;
@@ -21,6 +23,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     height: 150px;
+    opacity: 0.8;
 }
 .left-header{
     display: flex;
@@ -34,10 +37,14 @@ body{
 .left-header-text-upper{
     font-weight: bold;
     margin-bottom: 5px;
+    animation-name: logo_animation;
+    animation-duration: 2s;
 }
 .left-header-text-lower{
     font-size:medium;
-    color:black;
+    color:#e3e3e3;
+    animation-name: bottom_text_animation;
+    animation-duration: 2s;
 }
 .right-header{
     display: flex;
@@ -48,6 +55,8 @@ body{
     display:flex;
     flex-direction: row;
     align-items: center;
+    animation-name: right_animation;
+    animation-duration: 3s;
 }
 .right-header-content > a{
     margin-right: 10px;
@@ -78,6 +87,7 @@ body{
     height: 120px;
     padding-right: 50px;
     padding-left: 50px;
+    opacity: 0.8;
 }
 .footer > div >a{
     color: transparent;
@@ -104,4 +114,159 @@ body{
     width: auto;
     padding:45px;
     font-size: 100px;
+    animation-name: karsilama;
+    animation-duration: 1.5s;
+    user-select: none;
+}
+.main{
+    margin-top: 80px;
+    padding-left: 230px;
+    padding-right: 230px;
+    display: flex;
+    flex-direction: column;
+}
+.main-row{
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cardboard{
+    padding: 20px;
+    opacity: 0.8;
+    width: 400px;
+    height: 350px;
+    background-color: #25576ec9;
+    color:white;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 3px #000000;
+}
+.cardboardP{
+    padding: 20px;
+    opacity: 0.8;
+    width: 1400px;
+    height: 450px;
+    background-color: #25576ec9;
+    color:white;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 1px 1px 3px #000000;
+}
+.cardboardP > img {
+    margin-top: 75px;
+}
+.cardboardP > h4 {
+    margin-top: 75px;
+}
+.headerP{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+.text{
+    margin-top: 35px;
+    margin-left: 10px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 5px 8px 20px black;
+}
+.textP{
+    display: flex;
+    flex-direction: center;
+    align-items: baseline;
+    margin-top: 35px;
+    margin-left: 10px;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.cardboard-icon{
+    margin-top: 20px;
+    height: 78px;
+}
+.cardboard > h4:hover{
+    color: red;
+}
+.headerP{
+    margin-top: 30px;
+    user-select: none;
+}
+.headerP:hover{
+    color: red;
+}
+.cardboard > h4{
+    margin-top: 30px;
+    user-select: none;
+}
+.cardboard > span{
+    margin-left: 10px;
+}
+.footer > div >a{
+    color: transparent;
+}
+.footer > div >a:hover{
+    cursor: pointer;
+}
+.footer > div > a > img{
+    background-color: white;
+    height: 28px;
+    margin-left: 5px;
+}
+.footer > div > a > img:hover{
+    transform: translateY(-10px);
+    background-color: #8FD6E1;
+}
+.footer > div> span{
+    margin-left: 530px;
+}
+.cardboard:hover{
+    box-shadow: 5px 5px 5px black;
+    animation-name: cardboard_hover;
+    animation-duration: 1s;
+}
+.cardboardP:hover{
+    box-shadow: 5px 5px 5px black;
+    animation-name: cardboard_hover;
+    animation-duration: 1s;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    width: auto;
+    padding:45px;
+    font-size: 100px;
+    user-select: none;
+}
+@keyframes cardboard_hover {
+    from {transform: translateY(0);}
+    to {transform: translateY(-20px);}
+}
+@keyframes karsilama {
+    from {transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {transform: translateY(0);}
+}
+@keyframes logo_animation {
+    from {transform: translateX(-30px);
+        opacity: 0;
+    }
+    to {transform: translateX(0);}
+}
+@keyframes right_animation {
+    from {transform: translateX(30px);
+        opacity: 0;
+    }
+    to {transform: translateX(0);}
+}
+@keyframes bottom_text_animation {
+    from {transform: translatey(30px);
+        opacity: 0;
+    }
+    to {transform: translateY(0);}
 }
