@@ -7,6 +7,7 @@ body{
     color:white;
     font-size: 24px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url(spacee.jpg);
 }
 .logo{
     height: 120px;
